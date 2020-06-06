@@ -57,7 +57,7 @@ class DeepConvNet:
         self.params['W7'] = wight_init_scales[6] * np.random.randn(64*4*4, hidden_size)
         self.params['b7'] = np.zeros(hidden_size)
         self.params['W8'] = wight_init_scales[7] * np.random.randn(hidden_size, output_size)
-        self.params['b8'] = np.zeros(output_size)
+        self.params['b8'] = np.zeros(output_size) 
 
         # 계층 생성===========
         self.layers = []
